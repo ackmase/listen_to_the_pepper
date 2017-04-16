@@ -1,9 +1,9 @@
 phone_number = range(10)
 
 def PrintPhoneNumber(phone_number):
-  print '(%s)%s-%s' % (phone_number[0:3], 
-                       phone_number[3:6],
-                       phone_number[6:])
+  print '(%s)%s-%s' % (''.join(phone_number[0:3]), 
+                       ''.join(phone_number[3:6]),
+                       ''.join(phone_number[6:]))
                        
 def JumbleNumbers(phone_number):
   return [phone_number.pop(0)] + phone_number
